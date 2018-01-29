@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nMA-1Z-h43" kind="relationship" relationship="viewControllers" id="3R9-o3-dHO"/>
+                        <segue destination="tGw-fC-dpi" kind="relationship" relationship="viewControllers" id="Up7-vc-AZV"/>
+                        <segue destination="lWc-Xp-KQK" kind="relationship" relationship="viewControllers" id="0tD-z0-LIt"/>
+                        <segue destination="wp1-Pg-Py8" kind="relationship" relationship="viewControllers" id="KSa-RB-Ixm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--CalculationBid-->
+        <scene sceneID="A9r-Jl-jFE">
+            <objects>
+                <viewController storyboardIdentifier="calculationBidViewController" title="CalculationBid" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tGw-fC-dpi" customClass="CalculationBidViewController" customModule="LogisticsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MPX-n6-bL0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ФИО" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-Za-f3x">
+                                <rect key="frame" x="5" y="20" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название компании" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewH-tD-rD5">
+                                <rect key="frame" x="5" y="58" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="organization"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-dQ-RL5">
+                                <rect key="frame" x="5" y="96" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRT-3a-BaS">
+                                <rect key="frame" x="5" y="134" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-43-Iyd">
+                                <rect key="frame" x="5" y="202" width="365" height="318"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zd-Fw-2Hs">
+                                <rect key="frame" x="5" y="579" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.85734397169999998" green="0.30103346710000001" blue="0.47059601550000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="РАССЧИТАТЬ"/>
+                                <connections>
+                                    <action selector="confirmButtonClick:" destination="tGw-fC-dpi" eventType="touchUpInside" id="C9S-PQ-y3E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Описание груза" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yU-Kv-oEa">
+                                <rect key="frame" x="0.0" y="173" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwZ-zU-lma">
+                                <rect key="frame" x="5" y="541" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.85734397172927856" green="0.30103346705436707" blue="0.47059601545333862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ПРИКРЕПИТЬ ФОТО"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uqh-tL-b6A"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Заявка" image="first" id="3Ll-TZ-ggw"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="0Zd-Fw-2Hs" id="uhi-Pi-zGA"/>
+                        <outlet property="descriptionTextView" destination="Rna-43-Iyd" id="6KD-e3-f5U"/>
+                        <outlet property="emailTextField" destination="xRT-3a-BaS" id="c56-ht-1kb"/>
+                        <outlet property="nameTextField" destination="QBI-Za-f3x" id="kGq-nP-Z5S"/>
+                        <outlet property="organizationTextField" destination="ewH-tD-rD5" id="x2N-XT-lXl"/>
+                        <outlet property="phoneTextField" destination="eAz-dQ-RL5" id="ZaL-GC-Fe8"/>
+                        <outlet property="photoButton" destination="zwZ-zU-lma" id="Nkc-0P-jFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SiR-eU-Xmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="0.0"/>
+        </scene>
+        <!--Полезное-->
+        <scene sceneID="2ii-ja-nGU">
+            <objects>
+                <viewController id="wp1-Pg-Py8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CQC-LI-Dis">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rdb-Xk-22q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Полезное" image="first" id="CdL-9H-gTe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RwO-XU-rao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="739"/>
+        </scene>
+        <!--Чат-->
+        <scene sceneID="pNE-Qr-7Ae">
+            <objects>
+                <viewController id="lWc-Xp-KQK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRK-vl-YL1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3Il-wj-hwC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Чат" image="first" id="WhD-8V-Kwa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mi8-b7-vRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="739"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="ZWb-rK-4es">
+            <objects>
+                <tableViewController storyboardIdentifier="ordersTableViewController" title="Orders" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nMA-1Z-h43" customClass="OrdersTableViewController" customModule="LogisticsApp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6qR-vi-QsO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="xSd-Cg-rAf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="nMA-1Z-h43" id="5a7-W6-f3s"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="orderTableViewCell" textLabel="luS-4q-Ces" detailTextLabel="EUo-g0-pa7" rowHeight="55" style="IBUITableViewCellStyleValue1" id="DqL-na-F0y">
+                                <rect key="frame" x="0.0" y="72" width="375" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DqL-na-F0y" id="0fu-e7-s7e">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="54.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="luS-4q-Ces">
+                                            <rect key="frame" x="16" y="17" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EUo-g0-pa7">
+                                            <rect key="frame" x="283" y="17" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yg4-UM-gp5" kind="presentation" id="OA8-d6-AqV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="nMA-1Z-h43" id="QU5-Oe-Is8"/>
+                            <outlet property="delegate" destination="nMA-1Z-h43" id="QUR-sY-knw"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Кабинет" image="first" id="vTT-wK-XVS"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Ius-LW-f4k" id="DNM-9r-NmM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eq-hh-bVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="cRu-uT-x2B">
+                    <connections>
+                        <outlet property="delegate" destination="nMA-1Z-h43" id="shT-u8-p5J"/>
+                        <outlet property="searchContentsController" destination="nMA-1Z-h43" id="eE7-Dw-yt5"/>
+                        <outlet property="searchResultsDataSource" destination="nMA-1Z-h43" id="jQx-7E-NCB"/>
+                        <outlet property="searchResultsDelegate" destination="nMA-1Z-h43" id="UuO-8r-jbc"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="Ius-LW-f4k">
+                    <connections>
+                        <outlet property="delegate" destination="nMA-1Z-h43" id="vi6-ed-obf"/>
+                        <outlet property="searchBar" destination="xSd-Cg-rAf" id="VOa-Eb-g6I"/>
+                        <outlet property="searchContentsController" destination="nMA-1Z-h43" id="DLp-qq-rzN"/>
+                        <outlet property="searchResultsDataSource" destination="nMA-1Z-h43" id="t5D-3E-aR1"/>
+                        <outlet property="searchResultsDelegate" destination="nMA-1Z-h43" id="1GI-ME-hSj"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="857" y="-680"/>
+        </scene>
+        <!--Order Detail View Controller-->
+        <scene sceneID="s6x-x2-l8q">
+            <objects>
+                <viewController id="yg4-UM-gp5" customClass="OrderDetailViewController" customModule="LogisticsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ocw-HC-bia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="detail about order" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jq9-sj-sC9">
+                                <rect key="frame" x="59" y="113" width="257" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fys-dO-Kca"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDl-yZ-zo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="-681"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

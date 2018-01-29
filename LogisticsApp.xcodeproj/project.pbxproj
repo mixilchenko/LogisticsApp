@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		276C7859201FC14500D485D1 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C7858201FC14500D485D1 /* OrderDetailViewController.swift */; };
+		277F85E1201F5D47009C9A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E0201F5D47009C9A23 /* AppDelegate.swift */; };
+		277F85E3201F5D47009C9A23 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */; };
+		277F85E5201F5D47009C9A23 /* CalculationBidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */; };
+		277F85E8201F5D47009C9A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E6201F5D47009C9A23 /* Main.storyboard */; };
+		277F85EA201F5D47009C9A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E9201F5D47009C9A23 /* Assets.xcassets */; };
+		277F85ED201F5D47009C9A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */; };
+		94DD4BAFE9970F63E9CAA323 /* libPods-LogisticsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		276C7858201FC14500D485D1 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		277F85DD201F5D47009C9A23 /* LogisticsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogisticsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		277F85E0201F5D47009C9A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationBidViewController.swift; sourceTree = "<group>"; };
+		277F85E7201F5D47009C9A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		277F85E9201F5D47009C9A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		277F85EC201F5D47009C9A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		277F85EE201F5D47009C9A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LogisticsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277F85DA201F5D47009C9A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DD4BAFE9970F63E9CAA323 /* libPods-LogisticsApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277F85D4201F5D47009C9A23 = {
+			isa = PBXGroup;
+			children = (
+				277F85DF201F5D47009C9A23 /* LogisticsApp */,
+				277F85DE201F5D47009C9A23 /* Products */,
+				E70EEB32D7EFD70733855489 /* Pods */,
+				D58F56A8A0676A7CC8BFCCB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		277F85DE201F5D47009C9A23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277F85DD201F5D47009C9A23 /* LogisticsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277F85DF201F5D47009C9A23 /* LogisticsApp */ = {
+			isa = PBXGroup;
+			children = (
+				277F85E0201F5D47009C9A23 /* AppDelegate.swift */,
+				277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */,
+				276C7858201FC14500D485D1 /* OrderDetailViewController.swift */,
+				277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */,
+				277F85E6201F5D47009C9A23 /* Main.storyboard */,
+				277F85E9201F5D47009C9A23 /* Assets.xcassets */,
+				277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */,
+				277F85EE201F5D47009C9A23 /* Info.plist */,
+			);
+			path = LogisticsApp;
+			sourceTree = "<group>";
+		};
+		D58F56A8A0676A7CC8BFCCB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E70EEB32D7EFD70733855489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */,
+				9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		277F85DC201F5D47009C9A23 /* LogisticsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277F85F1201F5D47009C9A23 /* Build configuration list for PBXNativeTarget "LogisticsApp" */;
+			buildPhases = (
+				9D3D9E969683349B56C9D3BF /* [CP] Check Pods Manifest.lock */,
+				277F85D9201F5D47009C9A23 /* Sources */,
+				277F85DA201F5D47009C9A23 /* Frameworks */,
+				277F85DB201F5D47009C9A23 /* Resources */,
+				45FE3F19AB057BD88D3F5C12 /* [CP] Embed Pods Frameworks */,
+				5CB161F91A41A9FBE3ADE256 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogisticsApp;
+			productName = LogisticsApp;
+			productReference = 277F85DD201F5D47009C9A23 /* LogisticsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277F85D5201F5D47009C9A23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Smart Logistics";
+				TargetAttributes = {
+					277F85DC201F5D47009C9A23 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 277F85D8201F5D47009C9A23 /* Build configuration list for PBXProject "LogisticsApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 277F85D4201F5D47009C9A23;
+			productRefGroup = 277F85DE201F5D47009C9A23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277F85DC201F5D47009C9A23 /* LogisticsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		277F85DB201F5D47009C9A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277F85ED201F5D47009C9A23 /* LaunchScreen.storyboard in Resources */,
+				277F85EA201F5D47009C9A23 /* Assets.xcassets in Resources */,
+				277F85E8201F5D47009C9A23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45FE3F19AB057BD88D3F5C12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB161F91A41A9FBE3ADE256 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3D9E969683349B56C9D3BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogisticsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277F85D9201F5D47009C9A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276C7859201FC14500D485D1 /* OrderDetailViewController.swift in Sources */,
+				277F85E5201F5D47009C9A23 /* CalculationBidViewController.swift in Sources */,
+				277F85E1201F5D47009C9A23 /* AppDelegate.swift in Sources */,
+				277F85E3201F5D47009C9A23 /* OrdersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		277F85E6201F5D47009C9A23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277F85E7201F5D47009C9A23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277F85EC201F5D47009C9A23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		277F85EF201F5D47009C9A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		277F85F0201F5D47009C9A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		277F85F2201F5D47009C9A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UM7FM9Y8J7;
+				INFOPLIST_FILE = LogisticsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SmartLogistics.LogisticsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		277F85F3201F5D47009C9A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UM7FM9Y8J7;
+				INFOPLIST_FILE = LogisticsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SmartLogistics.LogisticsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277F85D8201F5D47009C9A23 /* Build configuration list for PBXProject "LogisticsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277F85EF201F5D47009C9A23 /* Debug */,
+				277F85F0201F5D47009C9A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277F85F1201F5D47009C9A23 /* Build configuration list for PBXNativeTarget "LogisticsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277F85F2201F5D47009C9A23 /* Debug */,
+				277F85F3201F5D47009C9A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277F85D5201F5D47009C9A23 /* Project object */;
+}
