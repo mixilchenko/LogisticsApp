@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 public struct Order {
     var id: String
     var status: String
-    var city: String
+    var location: String
     var route: String?
 }
 
@@ -33,12 +34,16 @@ class OrdersViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     }
 
     func loadData() {
-        // TODO: API запрос
+        
         if UserDefaults.standard.isLoggedIn() {
-            orders = Array(repeating: Order(id: "123456789",
-                                            status: "ДТ выпущена",
-                                            city: "Москва",
-                                            route: "20.01 - На станции назначении\n08.01 - Движение по ЖД\n01.01 - Ожидает ЖД\n28.12 - Таможенное оформление\n10.12 - В порту\n01.12 - В море\n03.11 - У отправителя"), count: 20)
+            // TODO: API запрос
+            if let path = Bundle.main.path(forResource: "orders", ofType: "json") {
+                let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let json = JSON(data)
+                for (_, subJson): (String, JSON) in json {
+                    orders.append(Order(id: subJson["id"].stringValue, status: subJson["status"].stringValue, location: subJson["location"].stringValue, route: subJson["route"].stringValue))
+                }
+            }
             filteredOrders = orders.filter({(order: Order) -> (Bool) in true})
             isLoaded = true
         }

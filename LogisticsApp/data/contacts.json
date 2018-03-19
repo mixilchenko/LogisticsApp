@@ -1,0 +1,29 @@
+[
+	{
+		"id": "1",
+		"city": "Москва",
+		"lat": 55.8891036,
+		"long": 37.5919123,
+		"address": "ул. Пришвина 8/2, офис 523",
+		"phone": "+7 (495) 215 24 73",
+		"email": "mow@atc-logistics.com"
+	},
+	{
+		"id": "2",
+		"city": "Пекин",
+		"lat": 39.9210256,
+		"long": 116.4409689,
+		"address": "3, Shuangshubeicun, Heizhuanghuxian, Chaoyang District, Beijing, China\n北京市朝阳区黑庄户乡双树北村3号院",
+		"phone": "+86 10 65180518\n+86 10 87305226",
+		"email": "bjs@atc-logistic.com"
+	},
+	{
+		"id": "3",
+		"city": "Гуанчжоу",
+		"lat": 23.1364457,
+		"long": 113.2854296,
+		"address": "Room 1905, North Tower, World Trade Center, No. 371-375 Huanshi Road East, Guangzhou, 510095, China\n中国广州市越秀区环市东路371－375号世贸大厦北搭1905室, 邮编510095",
+		"phone": "+86 20 83652501",
+		"email": "can@atc-logistic.com"
+	}
+]

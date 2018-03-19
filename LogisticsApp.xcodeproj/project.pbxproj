@@ -16,6 +16,10 @@
 		277F85E8201F5D47009C9A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E6201F5D47009C9A23 /* Main.storyboard */; };
 		277F85EA201F5D47009C9A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E9201F5D47009C9A23 /* Assets.xcassets */; };
 		277F85ED201F5D47009C9A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */; };
+		27B8DF0520604E1F007DC09C /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B8DF0120604E1F007DC09C /* orders.json */; };
+		27B8DF0620604E1F007DC09C /* transport_schemes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B8DF0220604E1F007DC09C /* transport_schemes.json */; };
+		27B8DF0720604E1F007DC09C /* offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B8DF0320604E1F007DC09C /* offers.json */; };
+		27B8DF0820604E1F007DC09C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B8DF0420604E1F007DC09C /* contacts.json */; };
 		27F5135F205E4CAC00FAB058 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5135E205E4CAC00FAB058 /* LoginViewController.swift */; };
 		27F51367205E726600FAB058 /* LoyaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51366205E726600FAB058 /* LoyaltyViewController.swift */; };
 		27F5136B205E8A1900FAB058 /* HelpfulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5136A205E8A1900FAB058 /* HelpfulTableViewController.swift */; };
@@ -23,7 +27,7 @@
 		27F5136F205E908600FAB058 /* TransportSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5136E205E908600FAB058 /* TransportSchemeViewController.swift */; };
 		27F51371205E909100FAB058 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51370205E909100FAB058 /* ContactViewController.swift */; };
 		27F51373205E931A00FAB058 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51372205E931A00FAB058 /* OfferViewController.swift */; };
-		94DD4BAFE9970F63E9CAA323 /* libPods-LogisticsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */; };
+		5187EEAC0AEFD1C8A0FA0853 /* Pods_LogisticsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E8E500E608B6C0FAADA721 /* Pods_LogisticsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		277F85E9201F5D47009C9A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F85EC201F5D47009C9A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F85EE201F5D47009C9A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B8DF0120604E1F007DC09C /* orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = orders.json; sourceTree = "<group>"; };
+		27B8DF0220604E1F007DC09C /* transport_schemes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transport_schemes.json; sourceTree = "<group>"; };
+		27B8DF0320604E1F007DC09C /* offers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = offers.json; sourceTree = "<group>"; };
+		27B8DF0420604E1F007DC09C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
 		27F5135E205E4CAC00FAB058 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		27F51366205E726600FAB058 /* LoyaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyViewController.swift; sourceTree = "<group>"; };
 		27F5136A205E8A1900FAB058 /* HelpfulTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulTableViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +55,7 @@
 		27F51370205E909100FAB058 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		27F51372205E931A00FAB058 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.debug.xcconfig"; sourceTree = "<group>"; };
-		842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LogisticsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E8E500E608B6C0FAADA721 /* Pods_LogisticsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogisticsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94DD4BAFE9970F63E9CAA323 /* libPods-LogisticsApp.a in Frameworks */,
+				5187EEAC0AEFD1C8A0FA0853 /* Pods_LogisticsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,7 @@
 		277F85DF201F5D47009C9A23 /* LogisticsApp */ = {
 			isa = PBXGroup;
 			children = (
+				27B8DF0920604E4B007DC09C /* data */,
 				277F85E0201F5D47009C9A23 /* AppDelegate.swift */,
 				277F85E2201F5D47009C9A23 /* OrdersViewController.swift */,
 				276C7858201FC14500D485D1 /* OrderDetailViewController.swift */,
@@ -106,10 +115,21 @@
 			path = LogisticsApp;
 			sourceTree = "<group>";
 		};
+		27B8DF0920604E4B007DC09C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				27B8DF0420604E1F007DC09C /* contacts.json */,
+				27B8DF0320604E1F007DC09C /* offers.json */,
+				27B8DF0120604E1F007DC09C /* orders.json */,
+				27B8DF0220604E1F007DC09C /* transport_schemes.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		D58F56A8A0676A7CC8BFCCB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */,
+				76E8E500E608B6C0FAADA721 /* Pods_LogisticsApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,8 +206,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B8DF0720604E1F007DC09C /* offers.json in Resources */,
 				277F85ED201F5D47009C9A23 /* LaunchScreen.storyboard in Resources */,
+				27B8DF0820604E1F007DC09C /* contacts.json in Resources */,
 				277F85EA201F5D47009C9A23 /* Assets.xcassets in Resources */,
+				27B8DF0520604E1F007DC09C /* orders.json in Resources */,
+				27B8DF0620604E1F007DC09C /* transport_schemes.json in Resources */,
 				277F85E8201F5D47009C9A23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,9 +225,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

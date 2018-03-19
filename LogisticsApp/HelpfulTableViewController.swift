@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 public struct Contact {
     var id: String
@@ -43,14 +44,29 @@ class HelpfulTableViewController: UITableViewController {
     
     func loadData() {
         // TODO: API запросы
-        transportSchemes.append(TransportScheme(id: "1",
-                                                header: "Авиаперевозка грузов",
-                                                description: "Прямая авиадоставка грузов из городов Китая (Пекин, Шанхай, Шэнчжень, Гуанчжоу, Ченду, Ухань, Гонконг), Вьетнама и др. стран Юго-Восточной Азии и Европы<br>Таможенное оформление в Москве и Белоруссии<br><b>Основные преимущества</b><br><ol><li>минимальные сроки доставки грузов;</li><li>гарантия сохранности хрупких и ценных грузов;</li><li>срочная доставка образцов товара.</li></ol>".toHTML()))
-       
-        contacts.append(Contact(id: "1", city: "Москва", lat: 55.889206, lon: 37.594090, address: "ул. Пришвина 8/2, офис 523", phone: "+7 (495) 215 24 73", email: "mow@atc-logistics.com"))
-        contacts.append(Contact(id: "2", city: "Пекин", lat: 39.930866, lon: 116.443824, address: "3, Shuangshubeicun, Heizhuanghuxian, Chaoyang District, Beijing, China\n北京市朝阳区黑庄户乡双树北村3号院", phone: "+86 10 65180518\n+86 10 87305226", email: "bjs@atc-logistic.com"))
+        if let path = Bundle.main.path(forResource: "transport_schemes", ofType: "json") {
+            let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let json = JSON(data)
+            for (_, subJson): (String, JSON) in json {
+                transportSchemes.append(TransportScheme(id: subJson["id"].stringValue, header: subJson["header"].stringValue, description: subJson["description"].stringValue.toHTML()))
+            }
+        }
         
-        offers.append(Offer(id: "1", date_end: "12.12.2018", header: "Скидка для Москвы", description: "<b>Для Москвы</b> действует скидка".toHTML()))
+        if let path = Bundle.main.path(forResource: "offers", ofType: "json") {
+            let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let json = JSON(data)
+            for (_, subJson): (String, JSON) in json {
+                offers.append(Offer(id: subJson["id"].stringValue, date_end: subJson["date_end"].stringValue, header: subJson["header"].stringValue, description: subJson["description"].stringValue.toHTML()))
+            }
+        }
+        
+        if let path = Bundle.main.path(forResource: "contacts", ofType: "json") {
+            let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let json = JSON(data)
+            for (_, subJson): (String, JSON) in json {
+                contacts.append(Contact(id: subJson["id"].stringValue, city: subJson["city"].stringValue, lat: subJson["lat"].floatValue, lon: subJson["long"].floatValue, address: subJson["address"].stringValue, phone: subJson["phone"].stringValue, email: subJson["email"].stringValue))
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

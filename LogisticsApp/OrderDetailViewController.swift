@@ -18,7 +18,7 @@ class OrderDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = order!.id
-        detailLabel.text = "Идентификатор: \(order!.id)\nСтатус: \(order!.status)\nГород: \(order!.city)"
+        detailLabel.text = "Идентификатор: \(order!.id)\nСтатус: \(order!.status)\nГород: \(order!.location)"
         if let route = order!.route {
             detailLabel.text = detailLabel.text! + "\n\nМаршрут:\n\(route)"
         }
