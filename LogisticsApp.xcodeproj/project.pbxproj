@@ -7,26 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271B4F77205D05F800C4CF56 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B4F76205D05F800C4CF56 /* MainTabBarController.swift */; };
+		271B4F79205D06BE00C4CF56 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B4F78205D06BE00C4CF56 /* MenuTableViewController.swift */; };
 		276C7859201FC14500D485D1 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C7858201FC14500D485D1 /* OrderDetailViewController.swift */; };
 		277F85E1201F5D47009C9A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E0201F5D47009C9A23 /* AppDelegate.swift */; };
-		277F85E3201F5D47009C9A23 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */; };
+		277F85E3201F5D47009C9A23 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E2201F5D47009C9A23 /* OrdersViewController.swift */; };
 		277F85E5201F5D47009C9A23 /* CalculationBidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */; };
 		277F85E8201F5D47009C9A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E6201F5D47009C9A23 /* Main.storyboard */; };
 		277F85EA201F5D47009C9A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F85E9201F5D47009C9A23 /* Assets.xcassets */; };
 		277F85ED201F5D47009C9A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */; };
+		27F5135F205E4CAC00FAB058 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5135E205E4CAC00FAB058 /* LoginViewController.swift */; };
+		27F51367205E726600FAB058 /* LoyaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51366205E726600FAB058 /* LoyaltyViewController.swift */; };
+		27F5136B205E8A1900FAB058 /* HelpfulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5136A205E8A1900FAB058 /* HelpfulTableViewController.swift */; };
+		27F5136D205E907000FAB058 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5136C205E907000FAB058 /* OffersTableViewController.swift */; };
+		27F5136F205E908600FAB058 /* TransportSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5136E205E908600FAB058 /* TransportSchemeViewController.swift */; };
+		27F51371205E909100FAB058 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51370205E909100FAB058 /* ContactViewController.swift */; };
+		27F51373205E931A00FAB058 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51372205E931A00FAB058 /* OfferViewController.swift */; };
 		94DD4BAFE9970F63E9CAA323 /* libPods-LogisticsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271B4F76205D05F800C4CF56 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		271B4F78205D06BE00C4CF56 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		271B4F7F205D264100C4CF56 /* LogisticsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogisticsApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		276C7858201FC14500D485D1 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		277F85DD201F5D47009C9A23 /* LogisticsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogisticsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F85E0201F5D47009C9A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		277F85E2201F5D47009C9A23 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationBidViewController.swift; sourceTree = "<group>"; };
 		277F85E7201F5D47009C9A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277F85E9201F5D47009C9A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F85EC201F5D47009C9A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F85EE201F5D47009C9A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F5135E205E4CAC00FAB058 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		27F51366205E726600FAB058 /* LoyaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyViewController.swift; sourceTree = "<group>"; };
+		27F5136A205E8A1900FAB058 /* HelpfulTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulTableViewController.swift; sourceTree = "<group>"; };
+		27F5136C205E907000FAB058 /* OffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTableViewController.swift; sourceTree = "<group>"; };
+		27F5136E205E908600FAB058 /* TransportSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportSchemeViewController.swift; sourceTree = "<group>"; };
+		27F51370205E909100FAB058 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		27F51372205E931A00FAB058 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		842AEDC9693461CBCAA7574D /* libPods-LogisticsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LogisticsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogisticsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LogisticsApp/Pods-LogisticsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,13 +85,23 @@
 			isa = PBXGroup;
 			children = (
 				277F85E0201F5D47009C9A23 /* AppDelegate.swift */,
-				277F85E2201F5D47009C9A23 /* OrdersTableViewController.swift */,
+				277F85E2201F5D47009C9A23 /* OrdersViewController.swift */,
 				276C7858201FC14500D485D1 /* OrderDetailViewController.swift */,
 				277F85E4201F5D47009C9A23 /* CalculationBidViewController.swift */,
 				277F85E6201F5D47009C9A23 /* Main.storyboard */,
+				27F5136A205E8A1900FAB058 /* HelpfulTableViewController.swift */,
+				27F51372205E931A00FAB058 /* OfferViewController.swift */,
+				27F5136C205E907000FAB058 /* OffersTableViewController.swift */,
+				27F5136E205E908600FAB058 /* TransportSchemeViewController.swift */,
+				27F51370205E909100FAB058 /* ContactViewController.swift */,
+				27F51366205E726600FAB058 /* LoyaltyViewController.swift */,
+				27F5135E205E4CAC00FAB058 /* LoginViewController.swift */,
+				271B4F78205D06BE00C4CF56 /* MenuTableViewController.swift */,
+				271B4F76205D05F800C4CF56 /* MainTabBarController.swift */,
 				277F85E9201F5D47009C9A23 /* Assets.xcassets */,
 				277F85EB201F5D47009C9A23 /* LaunchScreen.storyboard */,
 				277F85EE201F5D47009C9A23 /* Info.plist */,
+				271B4F7F205D264100C4CF56 /* LogisticsApp-Bridging-Header.h */,
 			);
 			path = LogisticsApp;
 			sourceTree = "<group>";
@@ -129,7 +158,8 @@
 				TargetAttributes = {
 					277F85DC201F5D47009C9A23 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -220,10 +250,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F51367205E726600FAB058 /* LoyaltyViewController.swift in Sources */,
+				27F5135F205E4CAC00FAB058 /* LoginViewController.swift in Sources */,
 				276C7859201FC14500D485D1 /* OrderDetailViewController.swift in Sources */,
 				277F85E5201F5D47009C9A23 /* CalculationBidViewController.swift in Sources */,
+				27F51373205E931A00FAB058 /* OfferViewController.swift in Sources */,
+				271B4F79205D06BE00C4CF56 /* MenuTableViewController.swift in Sources */,
+				27F51371205E909100FAB058 /* ContactViewController.swift in Sources */,
+				271B4F77205D05F800C4CF56 /* MainTabBarController.swift in Sources */,
+				27F5136D205E907000FAB058 /* OffersTableViewController.swift in Sources */,
 				277F85E1201F5D47009C9A23 /* AppDelegate.swift in Sources */,
-				277F85E3201F5D47009C9A23 /* OrdersTableViewController.swift in Sources */,
+				27F5136F205E908600FAB058 /* TransportSchemeViewController.swift in Sources */,
+				27F5136B205E8A1900FAB058 /* HelpfulTableViewController.swift in Sources */,
+				277F85E3201F5D47009C9A23 /* OrdersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,12 +400,16 @@
 			baseConfigurationReference = 6F2632B4EE2D17E4CACE6839 /* Pods-LogisticsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UM7FM9Y8J7;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LogisticsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SmartLogistics.LogisticsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LogisticsApp/LogisticsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,12 +420,15 @@
 			baseConfigurationReference = 9BBEF72CD1EC0EF2D321E6C5 /* Pods-LogisticsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UM7FM9Y8J7;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LogisticsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SmartLogistics.LogisticsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LogisticsApp/LogisticsApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

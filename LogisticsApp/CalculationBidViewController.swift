@@ -21,7 +21,7 @@ class CalculationBidViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +36,16 @@ class CalculationBidViewController: UIViewController {
         let email = emailTextField.text!
         let description = descriptionTextView.text
         var alert = UIAlertController(title: "Заявка принята", message: "\(name) из \(organization)!\nВаша заявка принята", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(s: UIAlertAction) -> () in self.clearFields()}))
         present(alert, animated: false, completion: nil)
+    }
+    
+    func clearFields() {
+        nameTextField.text = ""
+        organizationTextField.text = ""
+        phoneTextField.text = ""
+        emailTextField.text = ""
+        descriptionTextView.text = ""
     }
     
 }

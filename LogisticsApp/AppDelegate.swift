@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
         return true
     }
 
@@ -41,7 +40,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
+extension String {
+    func toHTML() -> NSAttributedString {
+        return try! NSAttributedString(data: data(using: String.Encoding.unicode)!,
+                                       options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
+                                       documentAttributes: nil)
+    }
+}
 
+extension UserDefaults {
+    func logIn() {
+        set(true, forKey: "isLoggedIn")
+    }
+    
+    func logOut() {
+        if (isLoggedIn()) {
+            removeObject(forKey: "token")
+            set(false, forKey: "isLoggedIn")
+        }
+    }
+    
+    func isLoggedIn() -> Bool {
+        return bool(forKey: "isLoggedIn")
+    }
+    
+    func setToken(value: String) {
+        set(value, forKey: "token")
+    }
+    
+    func getToken() -> String? {
+        if (isLoggedIn()) {
+            return string(forKey: "token")
+        }
+        return nil
+    }
 }
 
